@@ -1,8 +1,8 @@
 # Hello
 
-This project conso
+This project is a frontend project
 
-## Steps for start project
+## Steps for start the project
 
 1. ### `npm run install`
 2. ### `npm run start`

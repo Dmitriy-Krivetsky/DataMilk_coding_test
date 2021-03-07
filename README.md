@@ -1,8 +1,8 @@
 # Hello
 
-This project conso
+This project consists of two projects, to start, follow these steps
 
-## Steps for start project
+## Steps for start the project
 
 1. ### `npm install`
 2. ### `npm start`
