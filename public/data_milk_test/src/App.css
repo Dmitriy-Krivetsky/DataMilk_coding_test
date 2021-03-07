@@ -1,0 +1,199 @@
+:root {
+  --color-green: #90C95C;
+  --color-p: #BDBDBD;
+  --color-block-header: #202020;
+  --color-table-header: #828282;
+  --color-table-row: #4F4F4F;
+  --color-table-footer: #F2F2F2;
+  --color-shadow: #f0f0f0;
+  --height-block: 347px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-weight: normal;
+}
+
+html {
+  background: #E5E5E5;
+}
+
+body {
+  background: inherit;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+}
+
+footer {
+  margin-top: 64px;
+  text-align: center;
+}
+
+p {
+  color: var(--color-p);
+}
+
+.naw-btn.active {
+  background: white !important;
+  color: black !important;
+}
+
+.mt-50pr {
+  margin-top: 50% !important;
+}
+.page {
+  width: 916px;
+}
+.m-8 {
+  margin: 8px;
+}
+.mx-8 {
+  margin-left: 8px !important;
+  margin-right: 8px !important;
+}
+.mr-8 {
+  margin-right: 8px !important;
+}
+.px-16 {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.px-8 {
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+}
+.py-5 {
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+}
+.min-h-main {
+  min-height: var(--height-block);
+  height: auto !important;
+}
+.h-main {
+  height: var(--height-block);
+}
+.rounded-8 {
+  border-radius: 8px;
+}
+.market {
+  background: var(--color-green);
+}
+
+.price {
+  font-weight: bold;
+  font-size: 64px;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.block-header {
+  color: var(--color-block-header);
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+.max-h-10-row-48 {
+  max-height: calc(48px * 10 + 32px);
+}
+
+.table-container {
+  overflow: auto;
+}
+
+table {
+  margin: 0 !important;
+  width: 100%;
+}
+thead th {
+  font-weight: 500;
+  font-size: 11px;
+  color: var(--color-table-header);
+  border: none;
+  padding: 8px 0 !important;
+  position: sticky;
+  background: white !important;
+  top: -10px !important;
+}
+tbody {
+  border: none;
+}
+tbody td {
+  box-shadow: inset 0 -1px 0 var(--color-shadow) !important;
+  border: none;
+  color: var(--color-table-row);
+  font-size: 14px;
+  padding: 8px 0 !important;
+  white-space: nowrap;
+}
+.py-11 {
+  padding: 11.5px 0 !important;
+}
+tbody tr:last-child td {
+  box-shadow: none !important;
+}
+.table-grid tbody td:not(:first-child) {
+  box-shadow: inset 1px -1px 0 var(--color-shadow) !important;
+}
+.table-grid thead th {
+  box-shadow: inset 0 -1px 0 var(--color-shadow) !important;
+}
+.table-grid tbody tr:last-child td:not(:first-child) {
+  box-shadow: inset 1px 0 0 var(--color-shadow) !important;
+}
+.table-grid tbody tr:last-child td:first-child {
+  box-shadow: none !important;
+}
+.text-end {
+  text-align: end;
+}
+.vertical-middle {
+  vertical-align: middle;
+}
+.count-table {
+  background: var(--color-table-footer);
+  font-size: 13px;
+  line-height: 100%;
+}
+
+.icon-28 {
+  width: 28px;
+  height: 28px;
+}
+
+.icon-32 {
+  width: 32px;
+  height: 32px;
+}
+
+.chart-box {
+  height: auto;
+  min-height: 300px;
+}
+.chart-box > div {
+  min-height: 322px;
+  max-width: 85vw;
+}
+
+@media screen and (max-width: 992px) {
+  .page {
+    width: 100%;
+  }
+  .page > div > div {
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 90vw;
+  }
+  .flex-container {
+    margin: 0 8px;
+  }
+  .page > div > div > div {
+    width: 100% !important;
+    margin: 8px 0;
+  }
+}
