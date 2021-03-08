@@ -24,14 +24,14 @@ export default function Home() {
   const [data, setData] = useState([]);
   const [stat, setStat] = useState();
   const setMemoStat = useCallback(async () => {
-    setStat(await postJSON('/stats'));
+    setStat((await postJSON('/stats')).sort((a, b) => a.pos - b.pos));
   }, []);
   useEffect(() => {
     setMemoStat();
   }, [setMemoStat]);
   useEffect(() => {
     if (stat) {
-      setTopTen(stat.sort((a, b) => b.downloads - a.downloads).slice(0, 10));
+      setTopTen([...stat].sort((a, b) => b.downloads - a.downloads).slice(0, 10));
     }
   }, [stat]);
   useEffect(() => {
@@ -109,9 +109,9 @@ export default function Home() {
             </tr>
             </thead>
             <tbody>
-            {stat && stat.map((app, i) => (
+            {stat && stat.map(app => (
               <tr key={app.id}>
-                <td><p className="m-0">{i+1}</p></td>
+                <td><p className="m-0">{app.pos}</p></td>
                 <td><img className="icon-32 rounded-8 mx-8" alt="icon" src={app.image}/></td>
                 <td><a href={app.url} className="mx-8">{app.name || 'Null'}</a></td>
                 <td><span className="mx-8">{app.rating || 'Null'}</span></td>
