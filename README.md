@@ -41,3 +41,15 @@ Launches the test runner in the interactive watch mode.
 
 ### `npm run install`
 Launches the frontend project installer
+
+
+### Methods
+
+#### / hello
+Returns the text "Hello world"
+# # # # /formatted_json
+Returns Json in a readable form
+#### /stats
+Returns Json
+#### /top_ranked
+Returns filtered Json by applications that are in the top 10 by the number of times and truncated to 10 applications

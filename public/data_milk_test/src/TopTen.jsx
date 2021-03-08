@@ -26,7 +26,7 @@ export default function TopTen() {
                 <td className=""><p className="m-0 vertical-middle ">{i+1}</p></td>
                 <td className="d-flex flex-row align-items-center py-11">
                   <img className="icon-28 rounded-8 mx-8" alt="icon" src={app.image}/>
-                  <span className="mx-8">{app.name}</span>
+                  <a href={app.url} className="mx-8">{app.name}</a>
                 </td>
               </tr>
             ))}

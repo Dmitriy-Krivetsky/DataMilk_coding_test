@@ -106,6 +106,10 @@ p {
   overflow: auto;
 }
 
+a {
+  color: var(--color-table-row);
+}
+
 table {
   margin: 0 !important;
   width: 100%;
@@ -130,6 +134,7 @@ tbody td {
   font-size: 14px;
   padding: 8px 0 !important;
   white-space: nowrap;
+  vertical-align: middle;
 }
 .py-11 {
   padding: 11.5px 0 !important;
