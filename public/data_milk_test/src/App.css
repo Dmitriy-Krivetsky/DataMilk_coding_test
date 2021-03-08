@@ -190,15 +190,17 @@ tbody tr:last-child td {
     width: 100%;
   }
   .page > div > div {
-    flex-wrap: wrap;
     width: 100%;
     max-width: 90vw;
+  }
+  .w-50-wrap {
+    flex-wrap: wrap;
   }
   .flex-container {
     margin: 0 8px;
   }
-  .page > div > div > div {
-    width: 100% !important;
-    margin: 8px 0;
+  .w-50 {
+      width: 100% !important;
+      margin: 8px 0;
   }
 }

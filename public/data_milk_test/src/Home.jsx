@@ -47,7 +47,7 @@ export default function Home() {
   }, [topTen]);
   return (
     <div className="d-flex flex-column">
-      <div className="d-flex flex-row justify-content-between flex-container">
+      <div className="d-flex flex-row justify-content-between flex-container w-50-wrap">
         <div className="w-50 rounded-8 flex-center h-main market m-8 text-white flex-column ">
           <h1 className="price">$ 10.6 B</h1>
           <p className="text-white fw-bold m-0">Market size</p>
