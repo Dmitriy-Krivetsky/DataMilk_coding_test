@@ -47,7 +47,7 @@ Launches the frontend project installer
 
 #### / hello
 Returns the text "Hello world"
-# # # # /formatted_json
+#### /formatted_json
 Returns Json in a readable form
 #### /stats
 Returns Json
